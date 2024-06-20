@@ -8,7 +8,7 @@ public class HolaMundo {
 
     public static void main(String[] args) {
           System.out.println("Hola Mundo");
-
+          int edad;
         // Java es un lenguaje fuertemente tipado
         // Lo que quiere decir que los datos deben estar completamente definidos
         // Es decir un numnero debe ser declarado como numero un texto debe ser declarado texto...
