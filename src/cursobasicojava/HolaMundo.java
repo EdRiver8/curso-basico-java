@@ -8,10 +8,12 @@ public class HolaMundo {
 
     public static void main(String[] args) {
           System.out.println("Hola Mundo");
-          int edad;
+          int edad; // entero edad, y solo esta declarado -> inicializado
+          edad = 10;
         // Java es un lenguaje fuertemente tipado
         // Lo que quiere decir que los datos deben estar completamente definidos
-        // Es decir un numnero debe ser declarado como numero un texto debe ser declarado texto...
+        // Es decir un numnero debe ser declarado como numero un texto debe ser 
+        // declarado texto...
         // variable: Una variable es un espacio en memoria destinado 
         // para guardar informacion y cuyo valor puede cambiar
         // Para crear una variable en java se sigue el siguiete patron
