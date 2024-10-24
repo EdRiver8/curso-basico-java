@@ -100,24 +100,58 @@ public class Ciclos {
         // 3.2: Realizar un ciclo para pedir la marca y almacenarla en el vector anterior
         // esto se repetira hasta la cantidad de marcas que dijo el usuario que iba a almacenar
         // 4: Mostrar las marcas ingresadas
-        
+
         //1:
-        JOptionPane.showMessageDialog(null, "Hola este es el Taller El Veloz!");
+//        JOptionPane.showMessageDialog(null, "Hola este es el Taller El Veloz!");
         //2:
-        int cantidadMarcas = Integer.parseInt(JOptionPane.showInputDialog("Por favor ingresa la cantidad de marcas a registrar: "));
-        System.out.println("Cantidad de marcas: " + cantidadMarcas);
+//        int cantidadMarcas = Integer.parseInt(JOptionPane.showInputDialog("Por favor ingresa la cantidad de marcas a registrar: "));
+//        System.out.println("Cantidad de marcas: " + cantidadMarcas);
         // 3: 
-        String marcaVehiculos[] = new String[cantidadMarcas]; // crear vector del tamaño definido por el usuario
-        for(int contadorMarcas = 0; contadorMarcas < marcaVehiculos.length; contadorMarcas = contadorMarcas + 1){
-            marcaVehiculos[contadorMarcas] = JOptionPane.showInputDialog("Ingresa la marca #" + (contadorMarcas + 1) + ":");
-        }
+//        String marcaVehiculos[] = new String[cantidadMarcas]; // crear vector del tamaño definido por el usuario
+//        for(int contadorMarcas = 0; contadorMarcas < marcaVehiculos.length; contadorMarcas = contadorMarcas + 1){
+//            marcaVehiculos[contadorMarcas] = JOptionPane.showInputDialog("Ingresa la marca #" + (contadorMarcas + 1) + ":");
+//        }
         
 //        System.out.println("Marca 1:" + marcaVehiculos[0]);
 //        System.out.println("Marca 1:" + marcaVehiculos[1]);
 //        System.out.println("Marca 1:" + marcaVehiculos[2]);
 
-        for(int contadorMarcas = 0; contadorMarcas < marcaVehiculos.length; contadorMarcas = contadorMarcas + 1){
-           System.out.println(marcaVehiculos[contadorMarcas]); 
+//        for(int contadorMarcas = 0; contadorMarcas < marcaVehiculos.length; contadorMarcas = contadorMarcas + 1){
+//           System.out.println(marcaVehiculos[contadorMarcas]); 
+//        }
+        
+        int numeros[] = {3, 9, 12, 17, 20, 23, 87, 98, -2, 56};
+        //realizar un programa que diga si los numeros en el vector son multiplos de dos
+        int contadorWhile = 0;
+//        while(contadorWhile < numeros.length){
+//            System.out.println(numeros[contadorWhile]);
+//            contadorWhile = contadorWhile + 1;
+//        }
+        while(contadorWhile < numeros.length){
+            if(numeros[contadorWhile] % 2 == 0){
+                System.out.println("El numero " + numeros[contadorWhile] + ", es par!");
+            }
+            contadorWhile = contadorWhile + 1;
         }
-    }    
+        
+        // encuentre el primer numero par de la lista?
+        contadorWhile = 0;
+        while(contadorWhile < numeros.length){
+            if(numeros[contadorWhile] % 2 == 0){
+                System.out.println("Hey encontre el primer numero par: " + numeros[contadorWhile]);
+                break;
+            }
+            contadorWhile = contadorWhile + 1;
+        }
+        
+        // mostrar los numeros impares
+        contadorWhile = 0;
+        while(contadorWhile < numeros.length){
+            if(numeros[contadorWhile] % 2 != 0){
+                System.out.println("El numero " + numeros[contadorWhile] + ", es impar!");
+            }
+            contadorWhile = contadorWhile + 1;
+        }
+        
+   }
 }
